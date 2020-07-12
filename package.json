@@ -1,0 +1,67 @@
+{
+  "name": "braulio-app",
+  "description": "Gestión de la G-Suite de un IES",
+  "author": "José Miguel Sánchez Alés <sio2sio2+github@gmail.com>",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --env.output=bundle --progress",
+    "debug": "webpack-dev-server --env.output=debug --progress",
+    "release": "github-release RELEASE"
+  },
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "g-suite",
+    "ies",
+    "instituto"
+  ],
+  "browserslist": {
+    "production": [
+      "cover 95% in ES"
+    ],
+    "oneplus": [
+      "> 1% in ES"
+    ],
+    "ie10": [
+      "> .25% in ES",
+      "ie >= 10"
+    ],
+    "relax": [
+      "cover 80% in ES"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sio2sio2/braulio-app.git"
+  },
+  "homepage": "https://github.com/sio2sio2/braulio-app#readme",
+  "bugs": {
+    "url": "https://github.com/sio2sio2/braulio-app/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^9.8.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^9.0.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "braulio-core": "git+https://github.com/sio2sio2/braulio-core.git",
+    "core-js": "^3.6.5"
+  }
+}
